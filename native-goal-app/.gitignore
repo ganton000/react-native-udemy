@@ -15,3 +15,5 @@ web-build/
 
 #MISC
 .expo-shared/
+package-lock.json
+yarn.lock
