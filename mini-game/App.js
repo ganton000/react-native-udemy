@@ -6,6 +6,8 @@ import StartGameScreen from "./screens/StartGameScreen";
 import GameScreen from "./screens/GameScreen";
 import GameOverScreen from "./screens/GameOverScreen";
 
+import Colors from "./constants/colors";
+
 export default function App() {
     const [userNumber, setUserNumber] = useState(null);
 
@@ -21,7 +23,7 @@ export default function App() {
 
     return (
         <LinearGradient
-            colors={["#4e0329", "#ddb52f"]}
+            colors={[Colors.primary700, Colors.accent500]}
             style={styles.rootScreen}
         >
             <ImageBackground
@@ -30,9 +32,7 @@ export default function App() {
                 style={styles.rootScreen}
                 imageStyle={styles.backgroundImage}
             >
-                <SafeAreaView style={styles.rootScreen}>
-                    {screen}
-                </SafeAreaView>
+                <SafeAreaView style={styles.rootScreen}>{screen}</SafeAreaView>
             </ImageBackground>
         </LinearGradient>
     );
